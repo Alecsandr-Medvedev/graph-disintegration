@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Form</title>
+  <!-- Подключаем Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 align="center">Параметры</h2>
+    <div id="form-container">
+      <!-- Форма будет добавлена с помощью JavaScript -->
+    </div>
+    <div class="row justify-content-center">
+    	<button class="btn btn-primary mx-4" id="add-form-btn">+</button>
+    	<input type="number" class="form-control time col-md-2 mb-2 mx-1" placeholder="Время">
+    	<select class="form-control k_time col-md-2 mb-2 mx-4">
+    		<option>Секунды</option>
+    		<option>Часы</option>
+    		<option>Сутки</option>
+    		<option>Годы</option>
+    	</select>
+    	<button class="btn btn-primary mx-4" id="draw">Рисовать</button>
+    	
+    	
+  	</div>
+  </div>
+   <div class="container mt-5" id="chart-container"></div>
+
+  <!-- Подключаем Bootstrap JS и наш собственный JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="code.js"></script>
+</body>
+</html>
